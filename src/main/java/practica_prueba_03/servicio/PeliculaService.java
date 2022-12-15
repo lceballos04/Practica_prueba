@@ -13,8 +13,7 @@ import practica_prueba_03.modelo.Pelicula;
  */
 public interface PeliculaService {
   
-    public void crear(Pelicula pelicula);
-    public Pelicula buscarPorCodigo(int codigo);
-    public List<Pelicula> listar();
+    public abstract void crear(Pelicula pelicula);
+    public abstract List<Pelicula> listar();
     
 }

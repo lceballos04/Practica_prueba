@@ -15,29 +15,22 @@ import practica_prueba_03.modelo.Pelicula;
 public class PeliculaServiceImpl implements PeliculaService{
     
     private static List<Pelicula> peliculaList = new ArrayList<>();
-
+    
+   
     @Override
     public void crear(Pelicula pelicula) {
         this.peliculaList.add(pelicula);
         
-    }
-
-    @Override
-    public Pelicula buscarPorCodigo(int codigo) {
-        Pelicula retorno = null;
-        for (var pelicula : this.peliculaList) {
-            if (codigo == pelicula.getCodigoPelicula()) {
-                retorno = pelicula;
-                break;
-            }
         }
-        return retorno;
-    }
 
     @Override
     public List<Pelicula> listar() {
         return this.peliculaList;
-    }
+        }
+
+    
+
+   
 
     
 
